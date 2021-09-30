@@ -1,0 +1,1 @@
+This is mt first gradle project with CI/CD deployed on Heroku
