@@ -75,8 +75,10 @@ public class App {
      private static int getHerokuAssignedPort() {
         ProcessBuilder processBuilder = new ProcessBuilder();
         if (processBuilder.environment().get("PORT") != null) {
+            System.out.println("Oldu heralde");
             return Integer.parseInt(processBuilder.environment().get("PORT"));
         }
+        System.out.println("Olmadı aq");
         return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
     }
 
